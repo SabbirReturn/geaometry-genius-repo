@@ -25,7 +25,7 @@
             <div class="">
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Triangle -->
-                    <div class="card bg-base-100 shadow-xl py-10 md:px-5 border-2">
+                    <div class="card bg-base-100  shadow-xl py-10 md:px-5 border-2">
                         <figure>
                           <img
                             src="images/triangle.png"
@@ -38,25 +38,25 @@
                           </div>
                           <div class="flex gap-5 justify-center">
                             <div>
-                                <input class="w-20" type="number" name="" id="">
+                                <input class="w-20 rounded-lg" type="number" name="" id="triangleFirstInput">
                                 <span>Cm</span>
                             </div>
                             <div>
-                                <input class="w-20" type="number" name="" id="">
+                                <input class="w-20 rounded-lg" type="number" name="" id="triangleSecondInput">
                                 <span>Cm</span>
                             </div>
                           </div>
                           <div>
-                            <p>Area: <span></span>cm <sup>2</sup></p>
+                            <p>Area: <span id="triangleArea"></span>cm <sup>2</sup></p>
                           </div>
                           <div class="card-actions justify-center">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculate()" class="btn btn-primary">Calculate</button>
                           </div>
                         </div>
                     </div>
 
                     <!-- Rectangle -->
-                    <div class="card bg-base-100 shadow-xl py-10 md:py-20 md:px-5  border-2">
+                    <div class="card bg-base-100 md:py-20 lg:py-12 shadow-xl md:px-5  border-2">
                         <figure>
                           <img
                             src="images/rectangle.png"
@@ -211,10 +211,12 @@
                     </div>
                 </div>
             </div>
-            <div class="w-96 h-96 text-center border-2 rounded-2xl">
+            <div class=" md:w-96 lg:w-96 h-96 text-center border-2 rounded-2xl">
                 <p>Area calculate</p>
+                <h1>Triangle Area : <span id="traingle-Area"></span> cm <sup>2</sup></h1>
             </div>
         </section>
     </main>
+    <script src="script/triangle.js"></script>
 </body>
 </html>
