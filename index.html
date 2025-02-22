@@ -131,19 +131,19 @@
                           </div>
                           <div class="flex gap-5 justify-center">
                             <div>
-                                <input class="w-20" type="number" name="" id="">
+                                <input class="w-20" type="number" name="" id="firstRhomInput">
                                 <span>Cm</span>
                             </div>
                             <div>
-                                <input class="w-20" type="number" name="" id="">
+                                <input class="w-20" type="number" name="" id="secRhomInput">
                                 <span>Cm</span>
                             </div>
                           </div>
                           <div>
-                            <p>Area: <span></span>cm <sup>2</sup></p>
+                            <p>Area: <span id="rhombusArea"></span>cm <sup>2</sup></p>
                           </div>
                           <div class="card-actions justify-center">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="rhombusCalculation()" class="btn btn-primary">Buy Now</button>
                           </div>
                         </div>
                     </div>
@@ -216,11 +216,13 @@
                 <h1>Triangle Area : <span id="traingle-Area"></span> cm <sup>2</sup></h1>
                 <h1>Rectangle Area : <span id="rectangle-Area"></span> cm <sup>2</sup></h1>
                 <h1>Rectangle Area : <span id="parallelogram-Area"></span> cm <sup>2</sup></h1>
+                <h1>Rhombus Area : <span id="rhombus-Area"></span> cm <sup>2</sup></h1>
             </div>
         </section>
     </main>
     <script src="script/triangle.js"></script>
     <script src="script/rectangle.js"></script>
     <script src="script/parallelogram.js"></script>
+    <script src="script/rhombus.js"></script>
 </body>
 </html>
