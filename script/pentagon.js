@@ -3,6 +3,7 @@ function pentagonClick(){
     let height = getInputById('secPentaInput');
     let result = 0.5 * base * height;
     setInnerText('pentagonArea', result);
+    setInnerText('pentagon-Area', result);
 }
 
 function getInputById(getInput){

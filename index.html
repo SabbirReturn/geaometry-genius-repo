@@ -189,23 +189,23 @@
                         <div class="card-body text-center">
                           <div class="flex flex-col justify-center items-center">
                             <h2 class="card-title">Ellipse</h2>
-                            <p>Area(A)=0.5 X b X h</p>
+                            <p>Area(A)=πab</p>
                           </div>
                           <div class="flex gap-5 justify-center">
                             <div>
-                                <input class="w-20" type="number" name="" id="">
+                                <input class="w-20" type="number" name="" id="firstEllipInput">
                                 <span>Cm</span>
                             </div>
                             <div>
-                                <input class="w-20" type="number" name="" id="">
+                                <input class="w-20" type="number" name="" id="secEllipInput">
                                 <span>Cm</span>
                             </div>
                           </div>
                           <div>
-                            <p>Area: <span></span>cm <sup>2</sup></p>
+                            <p>Area: <span id="ellipseArea"></span>cm <sup>2</sup></p>
                           </div>
                           <div class="card-actions justify-center">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="ellipseClick()" class="btn btn-primary">Calculate</button>
                           </div>
                         </div>
                     </div>
@@ -217,6 +217,8 @@
                 <h1>Rectangle Area : <span id="rectangle-Area"></span> cm <sup>2</sup></h1>
                 <h1>Rectangle Area : <span id="parallelogram-Area"></span> cm <sup>2</sup></h1>
                 <h1>Rhombus Area : <span id="rhombus-Area"></span> cm <sup>2</sup></h1>
+                <h1>Pentagon Area : <span id="pentagon-Area"></span> cm <sup>2</sup></h1>
+                <h1>Ellipse Are1a : <span id="ellipse-Area"></span> cm <sup>2</sup></h1>
             </div>
         </section>
     </main>
@@ -225,5 +227,6 @@
     <script src="script/parallelogram.js"></script>
     <script src="script/rhombus.js"></script>
     <script src="script/pentagon.js"></script>
+    <script src="script/ellipse.js"></script>
 </body>
 </html>
