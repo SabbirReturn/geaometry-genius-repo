@@ -4,8 +4,8 @@ function calculate(){
     let result = 0.5 * base * height;
     setInnerText('triangleArea', result);
     setInnerText('traingle-Area',result);
-    document.getElementById('triangleFirstInput').value = '';
-    document.getElementById('triangleSecondInput').value = '';
+    // document.getElementById('triangleFirstInput').value = '';
+    // document.getElementById('triangleSecondInput').value = '';
 }
 
 function getInputValueById(inputValueById){

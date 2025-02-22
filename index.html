@@ -65,23 +65,23 @@
                         <div class="card-body text-center">
                           <div class="flex flex-col justify-center items-center">
                             <h2 class="card-title">Rectangle</h2>
-                            <p>Area(A)=0.5 X b X h</p>
+                            <p>Area(A)=w X l</p>
                           </div>
                           <div class="flex gap-5 justify-center">
                             <div>
-                                <input class="w-20" type="number" name="" id="">
+                                <input class="w-20" type="number" name="" id="firstRecInput">
                                 <span>Cm</span>
                             </div>
                             <div>
-                                <input class="w-20" type="number" name="" id="">
+                                <input class="w-20" type="number" name="" id="secRecInput">
                                 <span>Cm</span>
                             </div>
                           </div>
                           <div>
-                            <p>Area: <span></span>cm <sup>2</sup></p>
+                            <p>Area: <span id="setAreaRec"></span>cm <sup>2</sup></p>
                           </div>
                           <div class="card-actions justify-center">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="rectangleCalculate()" class="btn btn-primary">Calculate</button>
                           </div>
                         </div>
                     </div>
@@ -214,9 +214,11 @@
             <div class=" md:w-96 lg:w-96 h-96 text-center border-2 rounded-2xl">
                 <p>Area calculate</p>
                 <h1>Triangle Area : <span id="traingle-Area"></span> cm <sup>2</sup></h1>
+                <h1>Rectangle Area : <span id="rectangle-Area"></span> cm <sup>2</sup></h1>
             </div>
         </section>
     </main>
     <script src="script/triangle.js"></script>
+    <script src="script/rectangle.js"></script>
 </body>
 </html>
